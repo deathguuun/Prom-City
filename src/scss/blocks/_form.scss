@@ -1,0 +1,45 @@
+.form {
+	background: rgb(94, 93, 93);
+	margin-top: 100px;
+	padding: 20px 10px 24px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include sm-d {
+		margin-top: -50px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: $accent;
+		font-size: 25px;
+		margin-top: 20px;
+	}
+	p {
+		color: rgba(255, 255, 255, 0.8);
+		margin-top: 10px;
+		margin-bottom: 25px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	input {
+		margin-top: 6px;
+		padding-left: 23px;
+		border-radius: 5px;
+		width: 320px;
+		height: 50px;
+		border: 2px solid $accent;
+		background: rgb(212, 212, 212);
+		&::placeholder {
+			color: rgb(34, 34, 34);
+		}
+	}
+	&__button {
+		margin-top: 30px;
+		width: 274px;
+	}
+}

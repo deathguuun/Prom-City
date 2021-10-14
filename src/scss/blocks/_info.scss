@@ -1,0 +1,12 @@
+.info {
+	margin-top: 90px;
+	&__wrapper {
+		margin-top: 40px;
+	}
+	&__content {
+		padding-left: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}

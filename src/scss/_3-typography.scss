@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@font-face {
+	font-family: "gta-font";
+	src: url("../../static/fonts/gta-fonts.ttf");
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "gta5-font";
+	src: url("../../static/fonts/gta5-fonts.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "gtaSA-font";
+	src: url("../../static/fonts/gtaSA-fonts.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+h1 {
+	@include sm-d {
+	}
+}
+
+h2 {
+	font-weight: bold;
+	@include adaptive-font(30, 20);
+	line-height: 43px;
+	@include md-d {
+		line-height: 25px;
+	}
+}
