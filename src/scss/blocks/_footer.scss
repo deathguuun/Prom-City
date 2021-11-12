@@ -1,0 +1,11 @@
+.footer {
+	background: #000;
+	padding: 30px 0px 30px 0px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__remark {
+		color: $remark;
+	}
+}

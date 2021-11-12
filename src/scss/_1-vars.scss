@@ -17,7 +17,7 @@ $colorH6: #000000;
 $remark: #d2d3e8;
 
 //colors
-$accent: rgb(216, 119, 119);
+$accent: rgb(180, 131, 131);
 
 //Slider colors
 $dotsCol: #000000;
@@ -60,4 +60,10 @@ h6 {
 }
 a {
 	color: $colorMain;
+}
+
+svg {
+	path {
+		fill: $accent;
+	}
 }

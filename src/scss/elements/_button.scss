@@ -7,15 +7,18 @@
 	cursor: pointer;
 	transition: all 0.3s ease;
 	color: rgb(0, 0, 0);
+	&:hover {
+		color: #fff;
+		background: $accent;
+		border: none;
+	}
 	&--lg {
 		width: 208px;
 		height: 48px;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 20px;
-		&:hover {
-			background: rgb(145, 139, 139);
-		}
+
 		@include md-d {
 			width: 290px;
 		}
@@ -26,10 +29,5 @@
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 20px;
-		&:hover {
-			color: #fff;
-			background: $accent;
-			border: none;
-		}
 	}
 }
