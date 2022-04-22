@@ -1,15 +1,15 @@
 //Color dasctop background
-$headerColor: rgba(255, 255, 255, 0);
+$headerColor: #ffffff;
 //Color dasctop Link
-$headerTextColor: #fff;
+$headerTextColor: #000000;
 //Color hover animation in link (border) --- Цвет анимации при наведении на ссылки
 $headerLinkLineColor: $accent;
 
 //Scroll HEADER --- настройки Фиксированнной шапки
 //Border bottom HEADER dasctop ---Цвет нижнего бордера
-$headerColorBordBottom: #201f1f;
+$headerColorBordBottom: #ffffff;
 //Background collor in slide header --- Цвет шапки при скролле
-$headerSlideColor: rgba(180, 131, 131, 0.95);
+$headerSlideColor: #ffffff;
 
 //ADAPTIVE header
 //Burger color --- Цвет бургера
@@ -27,6 +27,8 @@ $headerBurgerMenuBg: $accent;
 	left: 0;
 	z-index: 1000;
 	transition: 0.15s linear;
+	margin-top: -15px;
+	box-shadow:  0px 0px 8px -3px rgba(50, 50, 50, 0.75);
 	&::before {
 		content: "";
 		position: absolute;
@@ -36,18 +38,13 @@ $headerBurgerMenuBg: $accent;
 		height: 100%;
 		background-color: $headerColor;
 		z-index: 2;
-	}
-	&__active {
-		margin-top: -15px;
-		background: $headerSlideColor;
-		border-bottom: 2px solid $headerColorBordBottom;
-	}
+	}	
 	&__body {
 		margin-top: 15px;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		height: 70px;
+		height: 60px;
 		align-items: center;
 	}
 
@@ -56,17 +53,24 @@ $headerBurgerMenuBg: $accent;
 	}
 	&__logo {
 		z-index: 3;
-		white-space: nowrap;
-		font-family: "gta5-font";
-		font-size: 40px;
-
+		display: flex;
+		align-items: center;
 		a {
-			color: #fff;
-			-webkit-text-stroke: 1px rgba(0, 0, 0, 0.438);
-			transition: 0.3s ease-in-out;
-			&:hover {
-				color: $accent;
-			}
+			color: #000000;
+			display: flex;
+			align-items: center;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		video {
+			width: 50px;
+			height: 50px;
+			margin-right: 5px;
+		}
+		img{
+			width: 30px;
+			margin-left: 5px;
 		}
 	}
 	&__menu {
@@ -76,16 +80,20 @@ $headerBurgerMenuBg: $accent;
 		}
 	}
 	&__list {
+		margin-top: 3px;
 		display: flex;
 		position: relative;
 		z-index: 2;
 		flex-wrap: wrap;
 		& li a {
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 23px;
 			white-space: nowrap;
-			&:hover {
-				color: $headerTextColor;
+			text-transform: uppercase;
+			transition: 0.3s linear;
+			&:hover{
+				color: $accent;
+				transition: 0.3s linear;
 			}
 		}
 		@include md-d {
@@ -112,7 +120,7 @@ $headerBurgerMenuBg: $accent;
 			display: block;
 			content: "";
 			position: absolute;
-			background-color: $headerLinkLineColor;
+			background-color: rgb(237, 255, 35);
 			height: 2px;
 			width: 0%;
 			top: 30px;
@@ -142,21 +150,73 @@ $headerBurgerMenuBg: $accent;
 	&__phone {
 		display: flex;
 		align-self: center;
+		align-items: center;
+		justify-content: center;
 		flex-wrap: nowrap;
-		svg {
-			width: 18px;
-			height: 18px;
-			path {
-				fill: $headerTextColor;
+		position: relative;
+		width: 35px;
+		height: 35px;
+		display: block;
+		text-align: center;
+		margin: 0 10px;
+		border-radius: 50%;
+		padding: 6px;
+		box-sizing: border-box;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+		background: linear-gradient(0deg, #fff, #ddd);
+		transition: 0.3s linear;
+		svg{
+			transition: 0.3s linear;
+			margin-top: -6px;
+			border-radius: 50%;
+		}
+		a{
+			transition: 0.3s linear;
+		}
+		&:hover{
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			transition: 0.3s linear;			
+		}		
+	}
+	&__call{
+		
+		svg{
+			transition: 0.3s linear;
+			width: 15px;
+			height: 15px;
+			path{
+				transition: 0.3s linear;
+				fill: #000000;
+			}
+		}
+		&:hover{
+			svg{		
+				transition: 0.3s linear;	
+				path{
+					transition: 0.3s linear;
+					fill: #6ccb6a;
+				}
 			}
 		}
 	}
-	&__tel {
-		color: $headerTextColor;
-		padding-top: 2px;
-		margin-left: 5px;
-		&:hover {
-			color: $accent;
+	&__inst{
+		transition: 0.3s linear;
+		svg{	
+			transition: 0.3s linear;		
+			path{
+				transition: 0.3s linear;
+				fill: #000000;
+			}
+		}
+		&:hover{
+			transition: 0.3s linear;
+			svg{	
+				transition: 0.3s linear;		
+				path{
+					transition: 0.3s linear;
+					fill: #f50a0a;
+				}
+			}
 		}
 	}
 	@include md-d {
@@ -274,3 +334,25 @@ $headerBurgerMenuBg: $accent;
 		}
 	}
 }
+
+
+
+	.social__icon{
+		a{
+			position: relative;
+			width: 50px;
+			height: 50px;
+			display: block;
+			text-align: center;
+			margin: 0 10px;
+			border-radius: 50%;
+			padding: 6px;
+			box-sizing: border-box;
+			box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+			background: linear-gradient(0deg, #fff, #ddd);
+			transition: 0.5s linear;
+			&:hover{
+				box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			}
+		}
+	}

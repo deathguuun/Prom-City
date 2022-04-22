@@ -1,14 +1,4 @@
-//HEADER slide
-(function () {
-	var header = document.querySelector('.header');
-	window.onscroll = () => {
-		if (window.pageYOffset > 22) {
-			header.classList.add('header__active');
-		} else {
-			header.classList.remove('header__active');
-		}
-	};
-}());
+
 
 //Header BURGER
 $(document).ready(function () {

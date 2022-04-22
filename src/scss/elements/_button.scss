@@ -2,15 +2,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #ffffff;
-	border: 2px solid black;
+	background: $accent;
+	
 	cursor: pointer;
 	transition: all 0.3s ease;
-	color: rgb(0, 0, 0);
+	color: yellow;
 	&:hover {
+		transition: all 0.3s ease;
+		filter: drop-shadow(0px 0px 10px yellow);
 		color: #fff;
-		background: $accent;
-		border: none;
+		
 	}
 	&--lg {
 		width: 208px;

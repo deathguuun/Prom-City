@@ -17,20 +17,7 @@ $(window).on('load', function () {
 },{"./main.js":2,"./scrollReveral.js":3}],2:[function(require,module,exports){
 "use strict";
 
-//HEADER slide
-(function () {
-  var header = document.querySelector('.header');
-
-  window.onscroll = function () {
-    if (window.pageYOffset > 22) {
-      header.classList.add('header__active');
-    } else {
-      header.classList.remove('header__active');
-    }
-  };
-})(); //Header BURGER
-
-
+//Header BURGER
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
     $('.header__burger,.header__menu').toggleClass('active');

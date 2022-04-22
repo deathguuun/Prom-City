@@ -35,7 +35,12 @@
 		border: 2px solid $accent;
 		background: rgb(212, 212, 212);
 		&::placeholder {
-			color: rgb(34, 34, 34);
+			color: rgba(34, 34, 34, 0.8);
+			font-size: 14px;
+		}
+		&:active,
+		&:focus{
+			border: 2px solid yellow;
 		}
 	}
 	&__button {
