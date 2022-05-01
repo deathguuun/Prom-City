@@ -1,4 +1,10 @@
 //ScrollReveral
+ScrollReveal().reveal('.truck__img', {
+	duration: 4000,
+	origin: 'left',
+	distance: '400px',
+	scale: 1.5
+});
 ScrollReveal().reveal('h2', {
 	duration: 500,
 	origin: 'top',
