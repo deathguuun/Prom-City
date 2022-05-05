@@ -21,6 +21,14 @@
 			height: 100px;
 			path {
 				color: $headerTextColor;
+				stroke: $headerTextColor;
+			}
+		}
+		&--personal{
+			svg {
+				width: 130px;
+				height: 130px;
+				
 			}
 		}
 	}
@@ -39,6 +47,9 @@
 		}
 		span {
 			color: $accent;
+		}
+		&__icon{
+
 		}
 	}
 
