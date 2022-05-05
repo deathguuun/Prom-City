@@ -65,10 +65,16 @@ ScrollReveal().reveal('.intro__btn', {
   opacity: 0.6
 });
 ScrollReveal().reveal('h2', {
-  duration: 500,
-  origin: 'top',
-  distance: '50px',
-  scale: 0.5
+  duration: 15000,
+  origin: 'right',
+  distance: '800px',
+  opacity: 1
+});
+ScrollReveal().reveal('.review__fura', {
+  duration: 15000,
+  origin: 'right',
+  distance: '800px',
+  opacity: 1
 });
 ScrollReveal().reveal('.info__images, .form__content', {
   duration: 1000,

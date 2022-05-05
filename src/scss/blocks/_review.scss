@@ -3,6 +3,7 @@
 	&__titles {
 		display: flex;
 		justify-content: center;
+		
 		h2{
 			padding-right: 60px;
 			&::after {
@@ -15,8 +16,17 @@
 				right: 0px;
 				top: 50%;
 			}
-		}
-		
+		}		
+	}
+	&__fura{
+		position: relative;
+		max-width: 150px;
+		opacity: 0;		
+		// img{
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 0;
+		// }
 	}
 	@include md-d {
 		margin-top: 91px;
