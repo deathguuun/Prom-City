@@ -1,5 +1,5 @@
 .intro {	
-	background: url("../img/header-bg.png") no-repeat;
+	background: url("../img/office.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 	-moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
@@ -11,7 +11,7 @@
 		padding-top: 0;
 	}
 	&__wrapper {
-		padding-top: 60px;
+		
 		display: flex;
 		justify-content: space-between;
 		// height: 100vh;
@@ -42,7 +42,8 @@
 	&__subtitle {
 		margin-top: 15px;
 		font-size: 25px;
-		color: #fff;
+		color: rgb(83, 148, 246);	
+
 		text-transform: uppercase;
 		font-weight: 500;
 		@include md-d {
@@ -50,33 +51,34 @@
 			text-align: center;
 		}
 		span{
-			color: yellow;
+			color: rgb(253, 195, 59);
 			font-weight: 700;
-			font-size: 28px;
+			font-size: 32px;
 		}
 	}
 	&__btn {
 		position: absolute;
 		left: 50%;
-		top: 70%;		
+		bottom: 13%;		
 		z-index: 10;
 		transform: translate(-50%, -50%);
+		font-weight: bold;
 	}
 	&__truck{
 		max-width: 750px;
 		position: absolute;
 		z-index: 4;
-		bottom: 20px;
+		bottom: -60px;
 		left: 80px;
 		img{
 			max-width: 100%;
 		}
 	}
 	&__crane{
-		max-width: 400px;
+		max-width: 350px;
 		position: absolute;
 		z-index: 4;
-		bottom: 131px;
+		bottom: 24px;
 		right: 28%;
 		img{
 			max-width: 100%;

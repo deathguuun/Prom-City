@@ -1,6 +1,6 @@
 //ScrollReveral
 ScrollReveal().reveal('.truck__img', {
-	duration: 2000,
+	duration: 3000,
 	origin: 'left',
 	distance: '400px',
 	scale: 1.5
@@ -8,7 +8,8 @@ ScrollReveal().reveal('.truck__img', {
 ScrollReveal().reveal('.intro__btn', {
 	duration: 6000,
 	origin: 'top',
-	distance: '200px',
+	distance: '150px',
+	opacity: 0.6
 	
 });
 ScrollReveal().reveal('h2', {
