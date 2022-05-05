@@ -53,10 +53,15 @@ $('.review__slider').slick({
 
 //ScrollReveral
 ScrollReveal().reveal('.truck__img', {
-  duration: 4000,
+  duration: 2000,
   origin: 'left',
   distance: '400px',
   scale: 1.5
+});
+ScrollReveal().reveal('.intro__btn', {
+  duration: 6000,
+  origin: 'top',
+  distance: '200px'
 });
 ScrollReveal().reveal('h2', {
   duration: 500,

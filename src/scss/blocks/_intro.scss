@@ -11,6 +11,7 @@
 		padding-top: 0;
 	}
 	&__wrapper {
+		padding-top: 60px;
 		display: flex;
 		justify-content: space-between;
 		// height: 100vh;
@@ -55,23 +56,38 @@
 		}
 	}
 	&__btn {
-		margin-top: 20px;
+		position: absolute;
+		left: 50%;
+		top: 70%;		
+		z-index: 10;
+		transform: translate(-50%, -50%);
 	}
 	&__truck{
-		max-width: 900px;
+		max-width: 750px;
 		position: absolute;
 		z-index: 4;
-		bottom: 0px;
-		left: 150px;
+		bottom: 20px;
+		left: 80px;
+		img{
+			max-width: 100%;
+		}
+	}
+	&__crane{
+		max-width: 400px;
+		position: absolute;
+		z-index: 4;
+		bottom: 131px;
+		right: 28%;
 		img{
 			max-width: 100%;
 		}
 	}
 	&__img {
-		max-width: 350px;		
+		max-width: 250px;		
 		align-self: flex-end;
 		position: absolute;
-		bottom: 0;right: 250px;
+		bottom: 0;
+		right: 180px;
 		z-index: 5;
 		@include md-d {
 			max-width: 250px;
