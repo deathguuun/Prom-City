@@ -1,5 +1,6 @@
 .review {
 	padding-top: 100px;
+	
 	&__titles {
 		display: flex;
 		justify-content: center;
@@ -22,14 +23,13 @@
 		position: relative;
 		max-width: 150px;
 		opacity: 0;		
-		// img{
-		// 	position: absolute;
-		// 	left: 0;
-		// 	bottom: 0;
-		// }
+		@include md-d{
+			display: none;
+		}
 	}
 	@include md-d {
-		margin-top: 91px;
+		margin-top: 80px;
+		padding-top: 0;
 	}
 	&__slider {
 		margin-top: 80px;

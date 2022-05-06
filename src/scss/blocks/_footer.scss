@@ -1,6 +1,9 @@
 .footer {
 	background: #000;
 	padding: 30px 0px 30px 0px;
+	@include sm-d{
+		padding: 1px 0px 0px 0px;
+	}
 	&__logo{
 		a{
 			color: #fff;
@@ -11,18 +14,34 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include sm-d{
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	&__link{
+		margin: 0 0;
 	}
 	&__remark {
 		color: $remark;
+		@include sm-d{
+			margin-top: 15px;
+		}	
 	}
 	&__item{
 		display: flex;
 		align-items: center;
 		color: #fff;
 		p{
+			margin-left: 10px;
 			padding-top: 13px;
 			display: flex;
-			align-items: center;			
+			align-items: center;	
+			@include sm-d{
+				margin-left: 15px;
+				margin-bottom: 20px;
+			}		
 		}
 	}
 }

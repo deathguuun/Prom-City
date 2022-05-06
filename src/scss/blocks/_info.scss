@@ -12,4 +12,7 @@
 	&__paragraph{
 		margin-top: 40px;
 	}
+	@include md-d{
+		margin-bottom: 80px;
+	}
 }

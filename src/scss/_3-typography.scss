@@ -20,21 +20,23 @@ body {
 
 h1 {
 	// font-family: 'gta';
-	// text-transform: uppercase;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
 	font-size: 120px;
 	color: rgb(93, 150, 255);	
-//   -webkit-text-stroke: 0.5px rgb(255, 0, 179);
+	-webkit-text-stroke: 1px rgb(0, 0, 0);
    // text-shadow: 4px 0 rgb(255, 0, 230);	
 	// transform: rotate(-10deg);	
 	font-weight: 700;
 	@include md-d {
-		font-size: 35px;
+		font-size: 80px;
 		margin-top: 0px;
 		text-align: center;
 	}
 }
 
 h2 {
+
 	font-weight: bold;
 	@include adaptive-font(30, 20);
 	line-height: 43px;
