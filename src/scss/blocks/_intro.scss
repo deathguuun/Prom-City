@@ -38,12 +38,13 @@
 	}
 	&__title {
 		margin-top: 150px;
+		filter: drop-shadow(0px 0px 5px rgb(255, 0, 230));
 	}
 	&__subtitle {
 		margin-top: 15px;
 		font-size: 25px;
 		color: rgb(83, 148, 246);	
-
+		// padding-top: 80px;
 		text-transform: uppercase;
 		font-weight: 500;
 		@include md-d {

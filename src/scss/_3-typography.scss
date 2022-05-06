@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@import url('/static/fonts/rage-italic.ttf?family=Rage');
+@font-face {
+	font-family: 'gta';
+	src: url('/static/fonts/rage-italic.ttf?family=Rage');
+
+}
+
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -11,10 +16,13 @@ body {
 }
 
 h1 {
-	text-transform: uppercase;
-	font-size: 70px;
-	color: rgb(83, 148, 246);	
-	
+	font-family: 'gta';
+	// text-transform: uppercase;
+	font-size: 120px;
+	color: rgb(255, 255, 255);	
+//   -webkit-text-stroke: 0.5px rgb(255, 0, 179);
+   text-shadow: 4px 0 rgb(255, 0, 230);	
+	transform: rotate(-10deg);	
 	font-weight: 700;
 	@include md-d {
 		font-size: 35px;
