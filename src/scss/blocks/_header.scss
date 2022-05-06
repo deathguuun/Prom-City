@@ -93,10 +93,14 @@ $headerBurgerMenuBg: #fff;
 			white-space: nowrap;
 			text-transform: uppercase;
 			transition: 0.3s linear;
-			color: $accent;
+			
 			&:hover{
 				color: $accent;
 				transition: 0.3s linear;
+			}
+			@include md-d {
+				color: $accent;
+				
 			}
 		}
 		@include md-d {
