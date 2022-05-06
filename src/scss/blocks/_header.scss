@@ -15,7 +15,7 @@ $headerSlideColor: #ffffff;
 //Burger color --- Цвет бургера
 $headerBurgerColor: rgb(0, 102, 255);
 //Menu background color
-$headerBurgerMenuBg: $accent;
+$headerBurgerMenuBg: #fff;
 
 .lock {
 	overflow: hidden;
@@ -78,6 +78,7 @@ $headerBurgerMenuBg: $accent;
 		display: flex;
 		@include md-d {
 			flex-direction: column;
+			
 		}
 	}
 	&__list {
@@ -92,12 +93,14 @@ $headerBurgerMenuBg: $accent;
 			white-space: nowrap;
 			text-transform: uppercase;
 			transition: 0.3s linear;
+			color: $accent;
 			&:hover{
 				color: $accent;
 				transition: 0.3s linear;
 			}
 		}
 		@include md-d {
+			color: $accent;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
@@ -296,8 +299,10 @@ $headerBurgerMenuBg: $accent;
 			}
 			&__menu.active {
 				top: 0;
+				
 			}
 			&__list {
+				justify-content: center;
 			}
 			&__list li {
 				margin: 0px 0px 55px 0px;
