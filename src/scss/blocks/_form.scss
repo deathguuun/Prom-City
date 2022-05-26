@@ -25,7 +25,11 @@
 		font-size: 20px;
 		line-height: 26px;
 	}
-
+	form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	input {
 		margin-top: 7px;
 		padding-left: 23px;
@@ -46,5 +50,6 @@
 	&__button {
 		margin-top: 30px;
 		width: 274px;
+		align-self: center;
 	}
 }
