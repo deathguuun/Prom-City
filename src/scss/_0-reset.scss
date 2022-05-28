@@ -92,3 +92,9 @@ ul {
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 }
+
+html, body { 
+    position: relative;
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
