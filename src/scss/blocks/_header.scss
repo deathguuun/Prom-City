@@ -70,7 +70,7 @@ $headerBurgerMenuBg: #fff;
 			margin-right: 5px;
 		}
 		img{
-			width: 30px;
+			width: 100px;
 			margin-left: 5px;
 		}
 	}
@@ -156,7 +156,7 @@ $headerBurgerMenuBg: #fff;
 		}
 	}
 	&__phone {
-		display: flex;
+		display: flex !important;
 		align-self: center;
 		align-items: center;
 		justify-content: center;
@@ -175,7 +175,7 @@ $headerBurgerMenuBg: #fff;
 		transition: 0.3s linear;
 		svg{
 			transition: 0.3s linear;
-			margin-top: -6px;
+			
 			border-radius: 50%;
 		}
 		a{
@@ -317,6 +317,9 @@ $headerBurgerMenuBg: #fff;
 			}
 		}
 	}
+	.ukraine{
+		max-width: 30px;
+	}
 }
 
 @include xl-d {
@@ -379,4 +382,5 @@ $headerBurgerMenuBg: #fff;
 				box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 			}
 		}
+		
 	}
