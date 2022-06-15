@@ -13,14 +13,21 @@ ScrollReveal().reveal('.intro__btn', {
 	
 });
 ScrollReveal().reveal('h2', {
-	duration: 3000,
+	duration: 2000,
 	origin: 'right',
 	distance: '800px',
 	opacity: 1
 
 });
+ScrollReveal().reveal('.intro__crane', {
+	duration: 2000,
+	origin: 'right',
+	distance: '600px',
+	opacity: 0.5
+
+});
 ScrollReveal().reveal('.review__fura', {
-	duration: 3000,
+	duration: 2000,
 	origin: 'right',
 	distance: '800px',
 	opacity: 1
