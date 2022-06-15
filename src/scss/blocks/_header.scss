@@ -148,6 +148,10 @@ $headerBurgerMenuBg: #fff;
 		white-space: nowrap;
 		display: flex;
 		z-index: 2;
+		align-items: center;
+	a{
+		margin-left: 20px;
+	}
 		@include md-d {
 			font-size: 30px;
 			margin-left: 0;
